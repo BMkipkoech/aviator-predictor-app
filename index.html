@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aviator Predictor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Aviator Predictor</h1>
+        <form id="predictor-form">
+            <label for="latest-odd">Latest Odd:</label>
+            <input type="number" id="latest-odd" required>
+
+            <label for="latest-time">Latest Time (HH:MM):</label>
+            <input type="time" id="latest-time" required>
+
+            <button type="submit">Predict</button>
+        </form>
+
+        <div id="results">
+            <h2>Predicted Times</h2>
+            <div id="pink-predictions"></div>
+            <div id="blue-predictions"></div>
+            <div id="purple-predictions"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
